@@ -2,7 +2,15 @@ Rails.application.routes.draw do
   get 'home/index'
 
 
-  get 'users', to: 'user#get_users'
+  get 'users', to: 'users#index'
+  get 'cities', to: 'cities#index'
+  get 'countries', to: 'countries#index'
+  get 'groups', to: 'groups#index'
+  get 'messages', to: 'messages#index'
+  get 'states', to: 'states#index'
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
